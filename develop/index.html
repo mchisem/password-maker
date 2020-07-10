@@ -12,14 +12,15 @@
     <h1>Password Generator</h1>
 
     <div class="container">
-        <input> Length of the password
+        <input id="length"> Length of the password
         (between 8 - 128 characters)<br>
-        <input type="checkbox"> Lowercase<br>
-        <input type="checkbox"> Numeric<br>  
-        <input type="checkbox"> Special characters<br> 
+        <input type="checkbox" id="lowercase"> Lowercase<br>
+        <input type="checkbox" id="uppercase"> Uppercase<br>
+        <input type="checkbox" id="numbers"> Numeric<br>  
+        <input type="checkbox" id="special-characters"> Special characters<br> 
         
         <div class="row">
-            <button>Generate</button>
+            <button class="btn" id="generate-btn">Generate</button>
         </div>
     </div>
 
