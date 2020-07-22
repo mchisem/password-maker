@@ -7,10 +7,7 @@ var areYouReady = confirm("Ready to begin?");
 // conditional responses based on whether the user wants to make a password or not
 if (areYouReady) {
     var instructions = confirm("Check the boxes below to customize your new password.");
-;
-  }
-
-  else {
+  } else {
     alert("Well then.");
   }
 
@@ -22,14 +19,9 @@ var numbers = document.querySelector("#numbers");
 var specialCharacters = document.querySelector("#special-characters");
 var generate = document.querySelector("#generate-btn");
 
-const upperLetters = [
-    'A','B','C','D','E','F','G','H','I','J','K','L','M','N',
-    'O','P','Q','R','S','T','U','V','W','X','Y','Z'
-]
-const lowerLetters = [
-    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
-    'p','q','r','s','t','u','v','w','x','y','z'
-]
+const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+const lowerLetters = 'abcdefghijklmnopqrstuvwxyz'
 
 const characters = '~`!@#$%^&*(){}[]=<>/,.""'
 
