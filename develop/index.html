@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link type="text/css" rel="stylesheet" href="style.css">
 
-    <title>Pass Word Generator</title>
+	<title>Document</title>
 </head>
 <body>
-    <h1>Password Generator</h1>
+	<div class="container">
+		<h1>Password Generator</h1>
+		<div class="input">
+			<p>Password length (between 8 - 128 characters)</p>
+			<input type="input" id="length" min='8' max='128'>
+		</div>
+		<div class="input">
+			<p>Uppercase letters</p> 
+			<input type="checkbox" id="uppercase">
+		</div>
+		<div class="input">
+			<p>Lowercase letters</p> 
+			<input type="checkbox" id="lowercase">
+		</div>
+		<div class="input">
+			<p>Numbers</p> 
+			<input type="checkbox" id="numbers">
+		</div>
+		<div class="input">
+			<p>Symbols</p> 
+			<input type="checkbox" id="symbols">
+		</div>
+		<button class="btn" id="generate">
+			Generate password
+		</button>
+	</div>
 
-    <div class="container">
-        <input id="length"> Length of the password
-        (between 8 - 128 characters)<br>
-        <input type="checkbox" id="lowercase"> Lowercase<br>
-        <input type="checkbox" id="uppercase"> Uppercase<br>
-        <input type="checkbox" id="numbers"> Numeric<br>  
-        <input type="checkbox" id="special-characters"> Special characters<br> 
-        
-        <div class="row">
-            <button class="btn" id="generate-btn">Generate</button>
-        </div>
-    </div>
-
-<script src="./js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,31 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    text-align: center;
-    background-color: black;
+	background-color: rgb(0, 0, 163);
+	color: white;
+	align-items: center !important;
+	text-align: center !important;
+	display: flex;
+	flex-direction: column;
+}
+
+/*********************************/
+/* password generator container */
+/********************************/
+.container {
+	/* background-color: rgb(0, 72, 75); */
+	background-image: linear-gradient(80deg, blue,  rgb(0, 0, 68));
+	margin: 5%;
+	margin-top: 14%;
+	padding: 3%;
+	width: 600px;
+	max-width: 100%;
 }
 
 h1 {
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    right: 0;
-    font-size: 50px;
+	padding-bottom: 5%;
+	font-size: 44px;
 }
 
-.container {
-    background-color: slategrey;
-    padding: 2%;
-    text-align: center;
-    border: black 6px solid;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 20%;
-    font-size: 25px;
+p {
+	font-size: 24px;
+	margin-left: 0;
 }
+
+.input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+	margin-right: 0;
+}
+
+.input input[type="checkbox"]:hover {
+	cursor: pointer;
+}
+
+#length	{
+	width: 60px;
+}
+
+.btn {
+	display: block;
+	color: white;
+	border: none;
+	font-size: 16px;
+	padding: 8px 12px;
+	background-color: rgb(3, 3, 49);
+	width: 100%;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
