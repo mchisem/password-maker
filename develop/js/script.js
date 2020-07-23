@@ -45,12 +45,12 @@ function randomPassword(lower, upper, number, symbol, length) {
 		inputTypes++;
 
 		inputTypesArray.forEach(type => {
-			const funcName = Object.keys(type)[0];
+			var funcName = Object.keys(type)[0];
 			generatedPassword += randomCharacters[funcName]();
 		});
 	}
 	
-	const finalPassword = generatedPassword.slice(0, length);
+	var finalPassword = generatedPassword.slice(0, length);
 	
 	return finalPassword;
 }
@@ -72,7 +72,7 @@ function randomNumber() {
 }
 
 function randomSymbol() {
-	const symbols = '!@#$%^&*(){}[]=<>/,.+='
+	var symbols = '!@#$%^&*(){}[]=<>/,.+='
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
